@@ -1,0 +1,1 @@
+// abyss log komutu

@@ -1,0 +1,1 @@
+// React uygulama giris noktasi

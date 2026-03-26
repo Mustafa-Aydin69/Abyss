@@ -1,0 +1,1 @@
+// abyss gc komutu

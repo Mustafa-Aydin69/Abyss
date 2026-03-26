@@ -1,0 +1,1 @@
+// Recover ve GC islemleri

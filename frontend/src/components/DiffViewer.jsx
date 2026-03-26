@@ -1,0 +1,1 @@
+// Satir bazli diff gosterimi
