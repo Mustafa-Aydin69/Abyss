@@ -1,7 +1,3 @@
-#!/bin/bash
-# Abyss - Proje Yapisi Kurulum Scripti
-# Kullanim: Masaustu/Abyss klasorunde calistir
-# chmod +x setup_abyss.sh && ./setup_abyss.sh
 
 BASE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
