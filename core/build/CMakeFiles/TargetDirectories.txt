@@ -1,0 +1,8 @@
+/home/mustafa/Masaüstü/Abyss/core/build/CMakeFiles/abyss.dir
+/home/mustafa/Masaüstü/Abyss/core/build/CMakeFiles/abyss_tests.dir
+/home/mustafa/Masaüstü/Abyss/core/build/CMakeFiles/edit_cache.dir
+/home/mustafa/Masaüstü/Abyss/core/build/CMakeFiles/rebuild_cache.dir
+/home/mustafa/Masaüstü/Abyss/core/build/CMakeFiles/list_install_components.dir
+/home/mustafa/Masaüstü/Abyss/core/build/CMakeFiles/install.dir
+/home/mustafa/Masaüstü/Abyss/core/build/CMakeFiles/install/local.dir
+/home/mustafa/Masaüstü/Abyss/core/build/CMakeFiles/install/strip.dir
