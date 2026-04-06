@@ -94,7 +94,7 @@ target_include_directories(abyss_tests PRIVATE
 )
 
 target_link_libraries(abyss_tests PRIVATE
-    ZLIB::ZLIBC
+    ZLIB::ZLIB
     OpenSSL::Crypto
 )
 
