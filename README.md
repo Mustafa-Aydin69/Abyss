@@ -92,6 +92,3 @@ Aktif geliştirme aşamasında. Agile metodolojisiyle sprint bazlı ilerlenmekte
 
 ---
 
-## Lisans
-
-MIT
