@@ -6,45 +6,45 @@
 
 #include <array>
 #include <cstdint>
-namespace abbys{
+namespace abyys{
 
 
-using Hash = std::array<uint8_t, 32>;
+    using Hash = std::array<uint8_t, 32>;
 
-enum class ObjectType : uint8_t {
-    BLOB    = 0,
-    TREE    = 1,
-    COMMIT  = 2,
-    UNKNOWN = 255
-};
+    enum class ObjectType : uint8_t {
+        BLOB    = 0,
+        TREE    = 1,
+        COMMIT  = 2,
+        UNKNOWN = 255
+    };
 
-enum class ExitCode : int {
-    SUCCESS = 0,
-    ERR_GENERAL = 1,
-    ERR_NO_REPO = 2,
-    ERR_NOT_FOUND = 3,
-    ERR_CONFLICT = 4,
-    ERR_EXISTS = 5,
-    ERR_CURROPTED = 6,
-    ERR_LOCKED = 7,
-    ERR_DIRTY = 8,
-    ERR_TIMEOUT = 9,
-    ERR_INVALID_JSON = 10,
-    ERR_NOT_BINARY = 11
-};
+    enum class ExitCode : int {
+        SUCCESS = 0,
+        ERR_GENERAL = 1,
+        ERR_NO_REPO = 2,
+        ERR_NOT_FOUND = 3,
+        ERR_CONFLICT = 4,
+        ERR_EXISTS = 5,
+        ERR_CURROPTED = 6,
+        ERR_LOCKED = 7,
+        ERR_DIRTY = 8,
+        ERR_TIMEOUT = 9,
+        ERR_INVALID_JSON = 10,
+        ERR_NOT_BINARY = 11
+    };
 
-enum class DiffLineType : uint8_t {
-    ADDED =0,
-    REMOVED = 1,
-    UNCHANCED = 2,
-    MODIFIED = 3
-};
+    enum class DiffLineType : uint8_t {
+        ADDED =0,
+        REMOVED = 1,
+        UNCHANCED = 2,
+        MODIFIED = 3
+    };
 
-struct LockInfo
-{
-    int pid;
-    int64_t timestamp;
-    char hostname[265];
-};
+    struct LockInfo
+    {
+        int pid;
+        int64_t timestamp;
+        char hostname[265];
+    };
 
 }
