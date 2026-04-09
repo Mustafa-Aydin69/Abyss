@@ -71,29 +71,29 @@ bool hex_to_hash(const std::string& hex, Hash& out) {
 
 // ── Zlib ──────────────────────────────────────────────────────────────────────
 
-std::vector<uint8_t> zlib_compress(const std::vector<uint8_t>& data) {
-    uLongf bound    = compressBound(static_cast<uLong>(data.size()));
-    std::vector<uint8_t> out(bound);
+ExitCode zlib_compress(const std::vector<uint8_t>& input,
+                       std::vector<uint8_t>&       output) {
+    uLongf bound    = compressBound(static_cast<uLong>(input.size()));
+    output.resize(bound);
 
     uLongf out_size = bound;
     int ret = compress2(
-        out.data(), &out_size,
-        data.data(), static_cast<uLong>(data.size()),
+        output.data(), &out_size,
+        input.data(),  static_cast<uLong>(input.size()),
         Z_BEST_COMPRESSION
     );
 
     if (ret != Z_OK) {
-        // compress2 bellekte çalışır — buraya normalde gelinmez
-        // ama silent fail yerine boş döndür, çağıran kontrol etmeli
-        return {};
+        output.clear();
+        return ExitCode::ERR_GENERAL;
     }
 
-    out.resize(out_size);
-    return out;
+    output.resize(out_size);
+    return ExitCode::SUCCESS;
 }
 
 ExitCode zlib_decompress(const std::vector<uint8_t>& input,
-                         std::vector<uint8_t>&        output) {
+                         std::vector<uint8_t>& output) {
     // Boş input — anlamsız, erken dön
     if (input.empty()) {
         output.clear();
