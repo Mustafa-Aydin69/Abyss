@@ -4,7 +4,7 @@
 #include<cstdint>
 #include "types.h"
 
-namespace abyys {
+namespace abyss {
     struct IndexEntry
     {
         std::string path;

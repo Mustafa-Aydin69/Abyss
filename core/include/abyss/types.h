@@ -6,7 +6,7 @@
 
 #include <array>
 #include <cstdint>
-namespace abyys{
+namespace abyss{
 
 
     using Hash = std::array<uint8_t, 32>;
@@ -25,7 +25,7 @@ namespace abyys{
         ERR_NOT_FOUND = 3,
         ERR_CONFLICT = 4,
         ERR_EXISTS = 5,
-        ERR_CURROPTED = 6,
+        ERR_CORRUPTED = 6,
         ERR_LOCKED = 7,
         ERR_DIRTY = 8,
         ERR_TIMEOUT = 9,

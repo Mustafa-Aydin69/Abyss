@@ -4,7 +4,7 @@
 #include<vector>
 #include"types.h"
 
-namespace abyys {
+namespace abyss {
     struct DiffLine {
         DiffLineType type;
         std::string content;
