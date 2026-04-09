@@ -8,7 +8,7 @@ namespace abyss {
  
 
 struct Object {
-    abyss :: ObjectType test; 
+    abyss :: ObjectType type; 
     std::vector<uint8_t> content;  // header sonrası ham içerik
 };
  
