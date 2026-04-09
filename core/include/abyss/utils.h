@@ -21,7 +21,8 @@ std::string hash_to_hex(const Hash& hash);
 
 bool hex_to_hash(const std::string& hex, Hash& out);
 
-std::vector<uint8_t> zlib_compress(const std::vector<uint8_t>& data);
+ExitCode zlib_compress(const std::vector<uint8_t>& input,
+                       std::vector<uint8_t>&       output);
 
 ExitCode zlib_decompress(const std::vector<uint8_t>& input,
                          std::vector<uint8_t>&       output);
