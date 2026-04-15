@@ -11,7 +11,6 @@ namespace fs = std::filesystem;
 
 namespace abyss {
 
-// ── Type dönüşüm yardımcıları (merkezi, duplicate yok) ───────────────────────
 
 static const char* object_type_to_str(ObjectType type) {
     switch (type) {
